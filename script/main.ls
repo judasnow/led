@@ -3,7 +3,7 @@ do ->
 
   class Screen
 
-    _bitmap = []
+    _screen-bitmap = []
 
     (pxls-size, rslution-x, rslution-y) ->
 
@@ -24,7 +24,7 @@ do ->
     clear: ->
 
     set-bit-map: ->
-      []
+      _screen-bitmap = [[0] * rslution-y] * rslution-x
 
     render: ->
 
